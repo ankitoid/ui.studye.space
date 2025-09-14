@@ -31,4 +31,4 @@ jobs:
         run: npm run build
 
       - name: Deploy to S3
-        run: aws s3 sync dist/ s3://studye.space-frontend --delete
+        run: aws s3 sync dist/ s3://ui.studye.space --delete
