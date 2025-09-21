@@ -16,6 +16,7 @@ import NavbarNew from "./pages/components/Navbar";
 import Slider from "./pages/components/Slider";
 import FooterComponent from "./pages/components/Footer"; // Avoid conflict with main Footer
 import Uis from "./pages/Uis";
+import TableShowcase from "./pages/components/Table";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               <Route path="features" element={<FeaturesPage />} />
               <Route path="navbar-new" element={<NavbarNew />} />
               <Route path="footer" element={<FooterComponent />} />
+              <Route path="table" element={<TableShowcase/>}/>
               {/* Add more component pages here */}
             </Route>
           </Routes>
