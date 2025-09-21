@@ -54,8 +54,16 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/components" className="cursor-pointer hover:text-blue-600">
+            <Link
+              to="/components"
+              className="cursor-pointer hover:text-blue-600"
+            >
               Components
+            </Link>
+          </li>
+          <li>
+            <Link to="/explore-ui" onClick={() => setIsOpen(false)}>
+              Explore UI
             </Link>
           </li>
         </ul>
@@ -94,6 +102,11 @@ export default function Navbar() {
             <li>
               <Link to="/components" onClick={() => setIsOpen(false)}>
                 Components
+              </Link>
+            </li>
+            <li>
+              <Link to="/explore-ui" onClick={() => setIsOpen(false)}>
+                Explore UI
               </Link>
             </li>
           </ul>

@@ -15,6 +15,7 @@ import Form from "./pages/components/Form";
 import NavbarNew from "./pages/components/Navbar";
 import Slider from "./pages/components/Slider";
 import FooterComponent from "./pages/components/Footer"; // Avoid conflict with main Footer
+import Uis from "./pages/Uis";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/explore-ui" element={<Uis />} />
 
             {/* Components route with nested pages */}
             <Route path="/components" element={<Components />}>
