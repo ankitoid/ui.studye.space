@@ -14,9 +14,14 @@ import FeaturesPage from "./pages/components/Features";
 import Form from "./pages/components/Form";
 import NavbarNew from "./pages/components/Navbar";
 import Slider from "./pages/components/Slider";
-import FooterComponent from "./pages/components/Footer"; // Avoid conflict with main Footer
-import Uis from "./pages/Uis";
+import FooterComponent from "./pages/components/Footer";
 import TableShowcase from "./pages/components/Table";
+
+// Explre UI
+import Uis from "./pages/Uis";
+
+// === NEW: import the Education page ===
+import EducationPage from "./pages/uis-pages/EducationPage";
 
 function App() {
   return (
@@ -27,7 +32,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
+
             <Route path="/explore-ui" element={<Uis />} />
+            <Route path="/uis/education" element={<EducationPage />} />
 
             {/* Components route with nested pages */}
             <Route path="/components" element={<Components />}>
@@ -40,8 +47,10 @@ function App() {
               <Route path="features" element={<FeaturesPage />} />
               <Route path="navbar-new" element={<NavbarNew />} />
               <Route path="footer" element={<FooterComponent />} />
-              <Route path="table" element={<TableShowcase/>}/>
+              <Route path="table" element={<TableShowcase />} />
               {/* Add more component pages here */}
+
+              {/* Explore UI */}
             </Route>
           </Routes>
         </main>
